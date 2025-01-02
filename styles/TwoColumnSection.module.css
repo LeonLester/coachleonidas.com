@@ -1,0 +1,44 @@
+/* styles/TwoColumnSection.module.css */
+.twoColumnSection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .column {
+    flex: 1;
+  }
+  
+  .imageColumn .image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .textColumn {
+    padding: 10px;
+  }
+  
+  .textColumn h2 {
+    margin-bottom: 15px;
+  }
+  
+  .textColumn ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .textColumn li {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .twoColumnSection {
+      flex-direction: column;
+    }
+  
+    .column {
+      width: 100%;
+    }
+  }

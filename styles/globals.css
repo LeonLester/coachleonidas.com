@@ -2,16 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    align-items: center;
   }
   
   body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff;
-    color: #000;
-    line-height: 1.6;
+    background-color: #57dd314e;
+    color: #d61212;
+    line-height: 1.2;
   }
   
   h1, h2, h3 {
     font-weight: bold;
   }
   
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

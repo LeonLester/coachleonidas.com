@@ -1,9 +1,9 @@
 /* Home.module.css */
-.container {
+/* .container {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
-  }
+  } */
   
   .hero {
     display: flex;
@@ -16,6 +16,14 @@
     text-align: center;
     padding: 0 20px;
     position: relative;
+    background-image: url('../public/images/leo_deadlift.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Sets the height of the section to full viewport height */
+    color: white; /* Text color for better contrast */
+    text-align: center; /* Centers the text */
+    padding: 20px; /* Adds some padding */
   }
   
   .heroContent {

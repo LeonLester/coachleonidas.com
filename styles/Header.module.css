@@ -1,13 +1,34 @@
 /* Header.module.css */
 .header {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
+  position: sticky; /* Sticky position */
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensure it appears above other elements */
+  background-color: #000; /* Background color for visibility */
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: shadow for better separation */
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.nav ul li a:hover {
+  color: #007bff; /* Optional: Highlight on hover */
+}
+
   .logo h1 {
     font-size: 2rem;
     margin: 0;
@@ -28,5 +49,19 @@
   
   .nav ul li a:hover {
     color: #007bff;
+  }
+  
+  .ctaButton {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
