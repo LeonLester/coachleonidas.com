@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/Testimonials.module.css';
+import Image from 'next/image';
 
 const testimonials = [
   {
@@ -26,7 +27,7 @@ const Testimonials = () => {
       <div className={styles.testimonialList}>
         {testimonials.map((testimonial, index) => (
           <div key={index} className={styles.testimonialCard}>
-            <img src={testimonial.image} alt={testimonial.name} />
+            <Image src={testimonial.image} alt={testimonial.name} />
             <p>{testimonial.text}</p>
             <h3>{testimonial.name}</h3>
           </div>

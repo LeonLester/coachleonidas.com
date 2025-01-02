@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/Home.module.css';
+import Image from 'next/image';
 
 const services = [
   {
@@ -26,7 +27,7 @@ const Services = () => {
       <div className={styles.servicesList}>
         {services.map((service, index) => (
           <div key={index} className={styles.serviceCard}>
-            <img src={service.icon} alt={service.title} />
+          <Image src={service.icon} alt={service.title} />
             <h3>{service.title}</h3>
             <p>{service.description}</p>
           </div>
