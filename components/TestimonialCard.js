@@ -6,7 +6,7 @@ const TestimonialCard = ({ name, text, image }) => {
   return (
     <div className={styles.testimonialCard}>
       <Image src={image} alt={name} />
-      <p>"{text}"</p>
+      <p>&quot;{text}&quot;</p>
       <h3>{name}</h3>
     </div>
   )

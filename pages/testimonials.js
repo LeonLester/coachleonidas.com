@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/Testimonials.module.css';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Header from "../components/Header";
 
 const testimonials = [

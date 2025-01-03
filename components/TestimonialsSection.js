@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/Home.module.css';
-
+import Image from 'next/image';
 const testimonials = [
   {
     name: 'John Doe',
@@ -26,7 +26,7 @@ const TestimonialSection = () => {
       <div className={styles.testimonialList}>
         {testimonials.map((testimonial, index) => (
           <div key={index} className={styles.testimonialCard}>
-            <img src={testimonial.image} alt={testimonial.name} />
+            <Image src={testimonial.image} alt={testimonial.name} width={"50px"} height={"50px"}/>
             <p>{testimonial.text}</p>
             <h3>{testimonial.name}</h3>
           </div>
