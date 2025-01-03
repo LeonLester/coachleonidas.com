@@ -1,7 +1,9 @@
+import Header from "../components/Header";
 
 export default function Booking() {
     return (
       <section>
+            <Header />
         <h1>Book Your Free Consultation</h1>
         <p>Let’s start your journey to success. Schedule a call with me today!</p>
         <iframe

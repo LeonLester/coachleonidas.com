@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from '../styles/About.module.css';
+import Header from "../components/Header";
 
 const About = () => {
   return (
     <div className={styles.container}>
+          <Header />
       <h1>About Coach Leonidas</h1>
       <p>
         I&apos;m a dedicated fitness coach with a passion for helping individuals reach

@@ -23,7 +23,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <section className={styles.testimonials}>
-        <h2>What Clients Say</h2>
+        {/* <h2>What Clients Say</h2> */}
         {/* <div className={styles.testimonialList}>
           {testimonials.map((testimonial, index) => (
             <TestimonialCard key={index} {...testimonial} />
@@ -39,8 +39,8 @@ export default function Home() {
 
         />
       </section>
-      <section id="calendly-section" className={styles.calendly}>
-        <h2>Book Your Free Consultation</h2>
+      <section id="calendly" className={styles.calendly}>
+        <h1>Work with Leo</h1>
         <p>Schedule a 30-minute consultation with Leonidas to discuss your goals.</p>
         <CalendlyEmbed />
       </section>

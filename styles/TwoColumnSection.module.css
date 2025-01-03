@@ -1,18 +1,28 @@
-/* styles/TwoColumnSection.module.css */
 .twoColumnSection {
     display: flex;
     align-items: center;
     gap: 20px;
     padding: 20px;
+    background-color: #191b1c;
+    /* background: linear-gradient(to bottom, #191b1c 80%, #ffffff); */
+    color: #dcd9d4;
+    width: 100%;
+    height: auto; /* Adjust the height based on content */
   }
   
   .column {
     flex: 1;
   }
   
+  .imageColumn {
+    display: flex; /* Ensure the image column is flex */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+  }
+  
   .imageColumn .image {
-    width: 100%;
-    height: auto;
+    max-width: 50%; /* Adjust as needed for the size */
+    max-height: 120%; /* Make it slightly taller than the text */
     border-radius: 8px;
   }
   
@@ -42,3 +52,4 @@
       width: 100%;
     }
   }
+  

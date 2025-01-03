@@ -4,7 +4,7 @@ const CalendlyEmbed = () => {
   return (
     <div
       style={{
-        height: '500px', /* Adjust height as needed */
+        height: '400px', /* Adjust height as needed */
         maxWidth: '100%',
         margin: '0 auto',
       }}
@@ -12,7 +12,7 @@ const CalendlyEmbed = () => {
       <iframe
         src="https://calendly.com/leonidaskaragiannis/30min"
         style={{
-          width: '100%',
+          width: '400px',
           height: '100%',
           border: 'none',
           overflow: 'hidden',

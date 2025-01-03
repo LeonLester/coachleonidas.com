@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
+import Header from "../components/Header";
 
 const services = [
   {
@@ -23,6 +24,7 @@ const services = [
 const Services = () => {
   return (
     <section className={styles.services}>
+      <Header />
       <h2>Our Services</h2>
       <div className={styles.servicesList}>
         {services.map((service, index) => (

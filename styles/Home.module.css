@@ -51,12 +51,13 @@
     border-radius: 5px;
     text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease; /* Smooth transitions */
   }
   
   .ctaButton:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #191b1c;
+    color: #9b4e32;
+    transform: scale(1.05); /* Slightly enlarge the button */
   }
   
   .videoContainer {
@@ -82,5 +83,23 @@
     .hero p {
       font-size: 1.2rem;
     }
+  }
+  
+  /* .calendly {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  } */
+
+  .calendly {
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #3b515f;
+    color: #dcd9d4;
   }
   

@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from '../styles/Header.module.css';
+import Image from 'next/image';
 
 const Header = () => {
 
@@ -11,7 +12,9 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <h1>Coach Leonidas</h1>
+      <Link href="/" className={styles.logo}>
+        <Image src="/images/logo.png" alt="Site Logo" width={50} height={50} /> {/* Adjust size as needed */}
+      </Link>
       </div>
       <nav className={styles.nav}>
         <ul>
